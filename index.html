@@ -452,6 +452,7 @@ const PATHS = {
   chevron: '<path d="m9 6 6 6-6 6"/>',
   chevL: '<path d="m15 6-6 6 6 6"/>',
   loop: '<path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/>',
+  rew3: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><text x="12.5" y="16" text-anchor="middle" font-size="9.5" font-weight="700" fill="currentColor" stroke="none">3</text>',
   grid: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
   sliders: '<line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>'
 };
@@ -467,6 +468,7 @@ el('startBtn').innerHTML = ic('sparkle') + ' 开始 / 重新抽题';
 el('emptyIcon').innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${PATHS.chat}</svg>`;
 el('fcBtns').innerHTML =
   `<button class="ibtn" onclick="playCurrentIv()" title="再听一遍" aria-label="再听一遍">${ic('volume')}</button>` +
+  `<button class="ibtn" onclick="rewind3()" title="快退3秒" aria-label="快退3秒">${ic('rew3')}</button>` +
   `<button class="ibtn rec" id="recBtn" onclick="toggleRecord()" title="录音" aria-label="录音">${ic('mic')}</button>` +
   `<button class="ibtn" id="ansBtn" onclick="toggleIvAnswer()" title="参考答案" aria-label="参考答案">${ic('eye')}</button>` +
   `<button class="ibtn primary" onclick="nextIvQuestion()" title="下一题" aria-label="下一题">${ic('arrow')}</button>`;
@@ -543,6 +545,17 @@ function speakTTS(text) {
   });
 }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+/* 快退 3 秒：仅对 mp3（高音質）播放有效，浏览器 TTS 不支持定位 */
+function rewind3() {
+  if (currentAudio && !currentAudio.paused && !currentAudio.ended) {
+    currentAudio.currentTime = Math.max(0, currentAudio.currentTime - 3);
+  } else if ('speechSynthesis' in window && speechSynthesis.speaking) {
+    toast('浏览器 TTS 不支持快退（高音質 mp3 才可以）');
+  } else {
+    toast('没有正在播放的音频');
+  }
+}
 
 async function playLoop(id, text, suffix, cardEl) {
   stopAll();
@@ -660,6 +673,7 @@ function renderDeck(keepPos) {
       <div class="card-q">${q.q}</div>
       <div class="card-ctrl">
         <button class="ibtn" ${ph ? 'disabled' : `onclick="playLoop('${q.id}', QTEXT['${q.id}'].a, '-a', el('card-${q.id}'))"`} title="只听答案" aria-label="只听答案">${ic('volume')}</button>
+        <button class="ibtn" onclick="rewind3()" title="快退3秒" aria-label="快退3秒">${ic('rew3')}</button>
         <button class="ibtn big primary" onclick="playCurrentCard()" title="播放 问→答" aria-label="播放问题和答案">${ic('play')}</button>
         <button class="ibtn" onclick="stopAll()" title="停止" aria-label="停止">${ic('stop')}</button>
         <button class="ibtn loopbtn ${loopMode ? 'toggled' : ''}" onclick="toggleLoop()" title="循环播放：播完自动下一题" aria-label="循环播放">${ic('loop')}</button>
