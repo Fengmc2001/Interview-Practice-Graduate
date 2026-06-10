@@ -299,6 +299,7 @@ const DATA = window.INTERVIEW_DATA;
 const el = id => document.getElementById(id);
 const S = { mode: 'shadow', school: DATA.schools[0].id, rate: 1, repeat: 3, gap: 2, guide: false };
 const audioKind = {};
+const AUDIO_CACHE_BUST = Date.now();
 let playToken = 0;
 let currentAudio = null;
 let guideRendered = false;
@@ -347,7 +348,7 @@ async function probeAudio() {
   const jobs = [];
   for (const sc of DATA.schools) for (const q of sc.questions) {
     for (const suf of ['', '-a']) {
-      jobs.push(fetch(`audio/${q.id}${suf}.mp3`, { method: 'HEAD' })
+      jobs.push(fetch(`audio/${q.id}${suf}.mp3?v=${AUDIO_CACHE_BUST}`, { method: 'HEAD' })
         .then(r => { audioKind[q.id + suf] = r.ok ? 'file' : 'tts'; })
         .catch(() => { audioKind[q.id + suf] = 'tts'; }));
     }
@@ -377,7 +378,7 @@ function stopAll() {
 function playOnce(id, text, suffix) {
   return new Promise(resolve => {
     if (audioKind[id + suffix] === 'file') {
-      const a = new Audio(`audio/${id}${suffix}.mp3`);
+      const a = new Audio(`audio/${id}${suffix}.mp3?v=${AUDIO_CACHE_BUST}`);
       a.playbackRate = S.rate;
       a.onended = resolve;
       a.onerror = () => speakTTS(text).then(resolve);
@@ -413,12 +414,37 @@ async function playLoop(id, text, suffix, cardEl) {
   if (cardEl) cardEl.classList.remove('playing');
 }
 
+function hasAnswer(q) {
+  const ans = (q.a || '').trim();
+  return ans && !ans.startsWith('（ここに');
+}
+
+async function playQuestionAndAnswer(id, cardEl) {
+  stopAll();
+  const my = ++playToken;
+  const q = QTEXT[id];
+  if (cardEl) cardEl.classList.add('playing');
+  for (let i = 0; i < S.repeat; i++) {
+    if (my !== playToken) return;
+    await playOnce(id, q.q, '');
+    if (my !== playToken) return;
+    if (hasAnswer(q)) {
+      await sleep(650);
+      if (my !== playToken) return;
+      await playOnce(id, q.a, '-a');
+    }
+    if (i < S.repeat - 1) await sleep(S.gap * 1000);
+  }
+  if (cardEl) cardEl.classList.remove('playing');
+}
+
 /* ---------- 标签页 ---------- */
 function renderTabs() {
-  el('tabs').innerHTML = DATA.schools.map(sc =>
+  el('tabs').innerHTML =
+  `<button class="guide-tab ${S.guide ? 'active' : ''}" onclick="openGuide()">${ic('book')} 回答思路</button>` +
+  DATA.schools.map(sc =>
     `<button class="${(!S.guide && sc.id === S.school) ? 'active' : ''}" onclick="switchSchool('${sc.id}')">${sc.name}</button>`
-  ).join('') +
-  `<button class="guide-tab ${S.guide ? 'active' : ''}" onclick="openGuide()">${ic('book')} 回答思路</button>`;
+  ).join('');
 }
 function switchSchool(id) {
   S.school = id; S.guide = false;
@@ -450,9 +476,9 @@ function renderShadow() {
         ${badgeFor(q.id)}
       </div>
       <div class="qbtns">
-        <button class="btn primary" onclick="playLoop('${q.id}', QTEXT['${q.id}'].q, '', el('card-${q.id}'))">${ic('play')} 跟读播放</button>
+        <button class="btn primary" onclick="playQuestionAndAnswer('${q.id}', el('card-${q.id}'))">${ic('play')} 播放问题+答案</button>
         <button class="btn" onclick="stopAll()">${ic('stop')} 停止</button>
-        <button class="btn" onclick="playLoop('${q.id}', QTEXT['${q.id}'].a, '-a', el('card-${q.id}'))">${ic('volume')} 答案朗读</button>
+        <button class="btn" ${hasAnswer(q) ? `onclick="playLoop('${q.id}', QTEXT['${q.id}'].a, '-a', el('card-${q.id}'))"` : 'disabled'}>${ic('volume')} 答案朗读</button>
         <button class="btn" onclick="el('ans-${q.id}').classList.toggle('hide')">${ic('eye')} 显示/隐藏答案</button>
       </div>
       <div class="answer" id="ans-${q.id}"><span class="ans-label">MY ANSWER</span>${q.a || '（未填写答案）'}</div>

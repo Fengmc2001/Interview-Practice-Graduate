@@ -4,6 +4,9 @@
 # 你录的音频（个人隐私，按需手动保存，不进仓库）
 uploads/
 
+# 本地 API key 等私密配置
+.env
+
 # 系统文件
 .DS_Store
 *.log

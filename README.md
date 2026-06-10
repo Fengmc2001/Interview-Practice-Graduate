@@ -2,10 +2,10 @@
 
 日本大学院（修士）面试的**影子跟读 + 模拟面试**练习网页。纯前端、零后端、本地运行。
 
-- **跟读练习**：按学校分标签页，逐题播放标准日语发音（可调语速、循环遍数、跟读间隔），下方直接显示你写好的回答。
+- **跟读练习**：按学校分标签页，一键按「问题 → 答案」顺序播放标准日语发音（可调语速、循环遍数、跟读间隔），下方直接显示你写好的回答。
 - **模拟面试**：卡片式随机抽题，自动朗读问题 → 录音 → 当场回放 / 下载，可开「实时识别字幕」（Chrome）。
 - **回答思路**：独立标签页，30 个高频问题的题意 / 日英问法 / 面试官意图 / 回答结构与注意点。
-- 高音质日语语音由微软 `edge-tts` 神经语音（男声 Keita）**预生成为 mp3**；没有 mp3 的问题自动降级用浏览器 TTS。
+- 高音质日语语音已使用 OpenAI TTS（`gpt-4o-mini-tts` + `cedar`）**预生成为 mp3**；没有 mp3 的问题自动降级用浏览器 TTS。
 
 ---
 
@@ -52,6 +52,9 @@
 }
 ```
 
+- 当前题库按两个标签整理：
+  - `東大 生物統計情報`：只放生物统计、研究计划、CCW / DML / 因果推断等专业相关问题。
+  - `共通質問`：合并通用问题、个人经历、日本留学/生活、志望校/教授等非专业专属问题。
 - **新增一所学校** = 在 `schools` 数组里加一个 `{ id, name, questions: [...] }`。
 - **新增一题** = 在该学校 `questions` 里加一项，`id` 取个没用过的（如 `tb-19`）。
 - 未填的回答写 `（ここに…）` 占位即可，脚本不会为占位答案生成语音。
@@ -64,14 +67,22 @@
 问题或答案文本改动后，在 `面试练习/` 目录下运行：
 
 ```bash
-.venv/bin/python generate_audio.py
+.venv/bin/python generate_audio.py --engine openai --voice cedar --speed 1.0 --natural-pauses --force
 ```
 
-- 默认男声 `ja-JP-KeitaNeural`、语速适中。可选参数：
-  - `--rate -10%`（放慢 10%）/ `--rate +10%`（加快）
-  - `--voice ja-JP-NanamiNeural`（换女声）
+- 当前推荐方案需要 `OPENAI_API_KEY`：使用 `gpt-4o-mini-tts` + `cedar`，中速度、偏日本男性、自然停顿。
+- API key 不要写进 Git；可以在 shell 环境变量中设置，或在本目录创建未跟踪的 `.env`：
+  ```bash
+  OPENAI_API_KEY=你的key
+  ```
+- 常用参数：
+  - `--natural-pauses`：生成前加入音频专用停顿和术语读法，不改变网页显示文本。
+  - `--voice cedar`：OpenAI 声音，本项目当前使用。
+  - `--speed 1.0`：OpenAI 中速度；网页播放时还可以再用语速滑块调节。
+  - `--force`：即使文本没变也重新生成。
+  - `--engine edge --voice ja-JP-KeitaNeural --rate=-8% --pitch=-2Hz`：没有 OpenAI key 时的备用男声方案。
 - 脚本**只生成新增或文本改过的**音频，已生成且没改的会跳过；标记为真人录音（`human`）的永远不覆盖。
-- 需要联网（调用微软语音服务）。
+- 需要联网（OpenAI 或微软语音服务）。
 
 ---
 
@@ -88,7 +99,7 @@
    - 内容重复的问题合并为一张，避免冗余。
 3. **写入 `data/questions.js`**：新学校就新增一个 school 对象；改稿就定位到对应 `id` 修改 `q`/`a`。`id` 用学校缩写 + 序号（如 `tb-01`）。
 4. **校验 JSON**：用 `node -e` 加载 `questions.js` 确认无语法错误、统计题数。
-5. **生成语音**：跑 `generate_audio.py`，只会补生成新增/改动的音频。
+5. **生成语音**：跑 `generate_audio.py --engine openai --voice cedar --speed 1.0 --natural-pauses`，只会补生成新增/改动的音频。
 6. **（如已建仓）提交**：`git add -A && git commit -m "..."`，按需 `git push`。
 
 ---
@@ -125,12 +136,8 @@ git push
 
 ---
 
-## 八、下一步待办：更逼真的语音（OpenAI TTS 等）
+## 八、后续可选改进
 
-当前语音用微软 `edge-tts`（免费、神经语音，已相当自然）。若想进一步提升自然度，计划支持可选的高质量 API：
-
-- **候选**：OpenAI TTS（`gpt-4o-mini-tts` / `tts-1-hd`，声音如 `alloy`/`onyx` 等，可用 instructions 控制语气）、ElevenLabs、Google / Azure Neural2。
-- **改造思路**：给 `generate_audio.py` 增加 `--engine openai` 选项；engine=openai 时读环境变量 `OPENAI_API_KEY`，调用 TTS 接口生成 mp3，落地路径与 manifest 规则不变（网页侧零改动）。
-- **注意**：API key 不写进代码、不进 Git（放环境变量或本地未跟踪的配置文件）；日语自然度 OpenAI 不一定明显胜过 edge-tts，建议先小批量试听对比再决定是否全量切换。
-
-详见 `TODO.md`。
+- 模拟面试录音的本地持久化（IndexedDB），关页面不丢失。
+- 跟读模式增加「假名注音」开关，辅助生词发音。
+- 回答思路页支持搜索 / 标记「已背熟」。
