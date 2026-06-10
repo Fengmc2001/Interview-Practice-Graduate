@@ -1,26 +1,4 @@
 {
-  "common-01": {
-    "hash": "782375366bf7063598a823dcb104df59",
-    "source_hash": "782375366bf7063598a823dcb104df59",
-    "source": "openai",
-    "voice": "cedar",
-    "natural_pauses": true,
-    "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
-    "response_format": "mp3",
-    "speed": 1.0
-  },
-  "common-02": {
-    "hash": "4cbc3b1e52f4b261d1a5d3f6ae774c7e",
-    "source_hash": "4cbc3b1e52f4b261d1a5d3f6ae774c7e",
-    "source": "openai",
-    "voice": "cedar",
-    "natural_pauses": true,
-    "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
-    "response_format": "mp3",
-    "speed": 1.0
-  },
   "common-03": {
     "hash": "8f51807d84fd63f57b3e62dc3e22917d",
     "source_hash": "8f51807d84fd63f57b3e62dc3e22917d",
@@ -28,7 +6,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -39,19 +17,31 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
   "common-05": {
-    "hash": "e41437801637993c368d3651a233c3e4",
-    "source": "tts",
-    "voice": "ja-JP-KeitaNeural"
+    "hash": "45d1944cf3efba5a5119a0c74da6cc1e",
+    "source_hash": "45d1944cf3efba5a5119a0c74da6cc1e",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
   },
   "common-06": {
-    "hash": "3281eb2b0cd3dea9f77e034bd5811e5c",
-    "source": "tts",
-    "voice": "ja-JP-KeitaNeural"
+    "hash": "45d0e1b9546a67da5116a0ce5b66cc22",
+    "source_hash": "45d0e1b9546a67da5116a0ce5b66cc22",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
   },
   "univ-a-01": {
     "hash": "e3f05aaea0d9032a234b186beaf4ce0c",
@@ -60,7 +50,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -71,7 +61,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -87,7 +77,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -98,7 +88,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -109,7 +99,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -120,7 +110,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -131,7 +121,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -142,7 +132,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -153,7 +143,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -164,7 +154,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -175,7 +165,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -186,7 +176,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -197,7 +187,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -208,7 +198,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -219,7 +209,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -230,29 +220,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
-    "response_format": "mp3",
-    "speed": 1.0
-  },
-  "tb-08": {
-    "hash": "c9d5fcb3d4c846ed42d558ee822b86db",
-    "source_hash": "c9d5fcb3d4c846ed42d558ee822b86db",
-    "source": "openai",
-    "voice": "cedar",
-    "natural_pauses": true,
-    "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
-    "response_format": "mp3",
-    "speed": 1.0
-  },
-  "tb-09": {
-    "hash": "261a857d0f5734bb42b09eb31a80a917",
-    "source_hash": "261a857d0f5734bb42b09eb31a80a917",
-    "source": "openai",
-    "voice": "cedar",
-    "natural_pauses": true,
-    "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -263,7 +231,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -274,7 +242,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -285,7 +253,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -296,7 +264,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -307,7 +275,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -318,7 +286,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -329,7 +297,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -340,7 +308,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -351,7 +319,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -362,7 +330,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -373,7 +341,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -384,7 +352,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -395,7 +363,7 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   },
@@ -406,7 +374,29 @@
     "voice": "cedar",
     "natural_pauses": true,
     "model": "gpt-4o-mini-tts",
-    "instructions_hash": "41801b78608af4f5b2433b342ddcaadc",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "common-07": {
+    "hash": "4131aeed155f808fce636aad65f2bf0e",
+    "source_hash": "4131aeed155f808fce636aad65f2bf0e",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "common-08": {
+    "hash": "2041e5137c4753e83b11157460fd6ac4",
+    "source_hash": "2041e5137c4753e83b11157460fd6ac4",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
   }
