@@ -1,0 +1,197 @@
+{
+  "common-01": {
+    "hash": "782375366bf7063598a823dcb104df59",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "common-02": {
+    "hash": "4cbc3b1e52f4b261d1a5d3f6ae774c7e",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "common-03": {
+    "hash": "8f51807d84fd63f57b3e62dc3e22917d",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "common-04": {
+    "hash": "e41437801637993c368d3651a233c3e4",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "common-05": {
+    "hash": "e41437801637993c368d3651a233c3e4",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "common-06": {
+    "hash": "3281eb2b0cd3dea9f77e034bd5811e5c",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "univ-a-01": {
+    "hash": "e3f05aaea0d9032a234b186beaf4ce0c",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "univ-a-02": {
+    "hash": "7ee9609e2140660940bf0e3ff049ba24",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "univ-a-03": {
+    "hash": "948156d6b23825747dd192a1d035219c",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-01": {
+    "hash": "31aef6ccb2825e2f2b54c08e73494e84",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-01-a": {
+    "hash": "feb891b1befca31be2330aa4406d9e91",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-02": {
+    "hash": "2e66da785f758aba32dbcdeec3f2215d",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-02-a": {
+    "hash": "22dfe3456849bf13060ac44bd2a4554f",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-03": {
+    "hash": "e1d5cc6fd68ebe75e16d45661d097343",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-03-a": {
+    "hash": "d1f93bc418f9218bc9b87c49fc06194f",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-04": {
+    "hash": "7396985cbe9ec8bb9b26e5a86fad6091",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-04-a": {
+    "hash": "5da2eec12b8e3b1389b920c03474b69e",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-05": {
+    "hash": "31b588d8ded942383d32f7de61936deb",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-05-a": {
+    "hash": "89645270b23d46a5c01a3949fd2d9a3f",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-06": {
+    "hash": "972f90d0e088e8e51066296fa35a44e8",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-06-a": {
+    "hash": "9be215bd421a23bb6247e47afd3bceda",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-07": {
+    "hash": "9626b5ba6e32975488a535d5068adaf6",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-07-a": {
+    "hash": "a9c61e0b01af075b9dfdf2cd53313ea4",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-08": {
+    "hash": "c9d5fcb3d4c846ed42d558ee822b86db",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-09": {
+    "hash": "261a857d0f5734bb42b09eb31a80a917",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-10": {
+    "hash": "dc179446838f24d5233e10de42c23f0e",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-11": {
+    "hash": "bc3bbaafe0f1f51e374b7fac57f284f7",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-12": {
+    "hash": "907686753009b4dddcb4d0d44982033e",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-13": {
+    "hash": "730492272196bfa72b861e25cfe4c5c5",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-14": {
+    "hash": "44baf2dc78d2f7840586a75491c96c89",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-14-a": {
+    "hash": "d17d98c7dc9eba1ab155a859c8038b98",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-15": {
+    "hash": "af699a4fb53478fac86bc56bfcd4220f",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-15-a": {
+    "hash": "7615f939062bb8d9a84c695bfb8e3107",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-16": {
+    "hash": "8d03398f9cd5d8c00104c1f115190ff8",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-16-a": {
+    "hash": "34fbc53809f6eaf7cb0103fcb5914f2a",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-17": {
+    "hash": "27422db3e2773316307e7cdb7c56e172",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-17-a": {
+    "hash": "8c62770480408af237e1412005216bb4",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-18": {
+    "hash": "b48ef3902f63bcd4e2580ce8e502adf9",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  },
+  "tb-18-a": {
+    "hash": "819d1180c312ed2696fc812e79c8162a",
+    "source": "tts",
+    "voice": "ja-JP-KeitaNeural"
+  }
+}
