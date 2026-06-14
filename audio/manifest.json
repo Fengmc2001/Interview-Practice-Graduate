@@ -861,5 +861,159 @@
     "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
     "response_format": "mp3",
     "speed": 1.0
+  },
+  "st-38": {
+    "hash": "a81e6968f578316cfafd0ec229030cb7",
+    "source_hash": "a81e6968f578316cfafd0ec229030cb7",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-38-a": {
+    "hash": "476f692d1e9cd3d310eee969d5416c37",
+    "source_hash": "476f692d1e9cd3d310eee969d5416c37",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-39": {
+    "hash": "5d532027006dad703e70e4243d95173d",
+    "source_hash": "5d532027006dad703e70e4243d95173d",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-39-a": {
+    "hash": "7a98eb1e36902732ffc3b295b3b159bb",
+    "source_hash": "19f5a5489f5ab71dffd3eb25404ddd0e",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-40": {
+    "hash": "56e1565815928814eec4c28d317e9312",
+    "source_hash": "56e1565815928814eec4c28d317e9312",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-40-a": {
+    "hash": "617c5ce9b32dbbe3825ae9b9876f8a3c",
+    "source_hash": "f77fa7f4c5743d5a48b476c19eb9b2bc",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-41": {
+    "hash": "4c88317b2081818eae0b5f5cae265490",
+    "source_hash": "4c88317b2081818eae0b5f5cae265490",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-41-a": {
+    "hash": "b10eb5358f32fc0351ee6056eae7eb7a",
+    "source_hash": "1af9b62b22edda6f9d3667e8e85a5428",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-42": {
+    "hash": "5a16c083d0b2b0d26472191c8c8b9a23",
+    "source_hash": "5a16c083d0b2b0d26472191c8c8b9a23",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-42-a": {
+    "hash": "1afef33d2d226346b9b68eb00ed6db16",
+    "source_hash": "1afef33d2d226346b9b68eb00ed6db16",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-43": {
+    "hash": "067ce3bba24b551da2423987dd0f188b",
+    "source_hash": "067ce3bba24b551da2423987dd0f188b",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-43-a": {
+    "hash": "9c8e01b8777ef6f8411023aacc815188",
+    "source_hash": "9c8e01b8777ef6f8411023aacc815188",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-44": {
+    "hash": "f27321e8401bb1c93708fccf8c60d005",
+    "source_hash": "f27321e8401bb1c93708fccf8c60d005",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
+  },
+  "st-44-a": {
+    "hash": "c079f811486fa72f612c3c704eb2b6d8",
+    "source_hash": "a54559ed489927142e38ef0499da3f0d",
+    "source": "openai",
+    "voice": "cedar",
+    "natural_pauses": true,
+    "model": "gpt-4o-mini-tts",
+    "instructions_hash": "915d72c1eae6a40c4f7df974e47d51e2",
+    "response_format": "mp3",
+    "speed": 1.0
   }
 }
